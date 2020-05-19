@@ -96,11 +96,20 @@ p {font-family: 'Varela Round', sans-serif;}
   #container1 {
      width: 95%;
   }
+    .titols2{
+        
+    }
 }
 
 .titols{
     font-size: 20px;
 }
 
-.titols2{   border-top: 1px solid black;}
+.titols2{ 
+    border-top: 1px solid black;}
 
+#icones{
+     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
