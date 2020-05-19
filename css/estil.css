@@ -1,0 +1,106 @@
+body {
+    background-color: burlywood;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+/*    font-family: 'Teko', sans-serif;*/
+h2{font-family: 'Teko', sans-serif;
+   font-size: 36px;}
+h1{font-family: 'Teko', sans-serif;
+   font-size: 50px;
+   text-align: center
+}
+p {font-family: 'Varela Round', sans-serif;}
+
+#container1 {
+    flex: 1 200px;
+    border-style: solid;
+    width: 70%;
+    color: black;
+    margin: auto;
+    background-color: azure;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 7px 4px;
+}
+
+#demoreel{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-2{
+    flex: 1;
+    flex-basis: 200px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    margin: 6px;
+    
+}
+
+.mida{
+    
+}
+
+@media (max-width: 600px) {
+  .mida {
+     width: 100%;
+  }
+}
+
+.boto{
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 0.6em;
+    background-color:darkmagenta;
+    transition: .4s;
+    color: white;
+
+}
+.boto:hover{
+    cursor: pointer;
+    background-color:cornflowerblue;
+    color:floralwhite;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    margin-top: 12px;
+}
+
+#icones{display: flex;
+        margin: 20px;
+        padding: 0.6em;
+        text-align: center;
+        }
+
+#tel{display: flex;
+     cursor: pointer;}
+
+#gmail{display: flex;
+       cursor: pointer;}
+
+#insta{
+    display: flex;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #container1 {
+     width: 95%;
+  }
+}
+
+.titols{
+    font-size: 20px;
+}
+
+.titols2{   border-top: 1px solid black;}
+
