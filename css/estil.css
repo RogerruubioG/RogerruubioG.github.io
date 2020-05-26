@@ -28,7 +28,7 @@ p {font-family: 'Varela Round', sans-serif;}
     box-shadow: 7px 4px;
 }
 
-#demoreel{
+.demoreel{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -44,7 +44,7 @@ p {font-family: 'Varela Round', sans-serif;}
 }
 
 .mida{
-    
+    box-shadow: 8px 1px;
 }
 
 @media (max-width: 600px) {
@@ -113,3 +113,66 @@ p {font-family: 'Varela Round', sans-serif;}
     flex-wrap: wrap;
     text-align: center;
 }
+
+ .clearfix {
+        overflow: auto;
+    }
+
+    .container {
+        width: 75%;
+        margin: auto;
+        border: 1px solid red;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .container-display {
+        position: relative;
+        width: 75%;
+        /*indicador*/
+        margin: 5px;
+        border: 1px dashed green;
+         box-shadow: 8px 4px;
+
+    }
+
+    .container-text {
+        text-align: left;
+        /*indicador*/
+        margin: 5px;
+        border: 1px dashed purple;
+    }
+
+    .boton-slider {
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: skyblue;
+    }
+
+    .boton-slider:hover {
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        background-color: deepskyblue;
+    }
+
+    .fletxaDreta-slider {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        */
+    }
+
+    .fletxaEsquerra-slider {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(0%, -50%);
+    }
+
+
+    .mySlides {
+        display: none;
+    }

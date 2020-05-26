@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Demorrel</title>
+    <title>Roger Rubio</title>
     <link rel="stylesheet" href="css/estil.css">
     <link rel="stylesheet" href="icones/">
     <link href="https://fonts.googleapis.com/css?family=Teko|Varela+Round&display=swap" rel="stylesheet">
 </head>
+   <style>
+    .mySlides {
+        display: none;
+    }
+</style> 
 <body>
     <div id="container1">
         <div class="titols">
@@ -28,15 +33,60 @@
          </div>
          <div class="titols2">
          <h2>Demo Reel</h2>
-            <div id="demoreel">
+            <div class="demoreel">
              <video class="mida" width="75%" controls>
              <source src="demoreel/VideoPresentacio.mp4" type="video/mp4">
              <source src="VideoPresentacio.ogg" type="video/ogg">
                 </video></div>
              </div>
-         <div class="titols2">
-         <h2>Eines</h2>
+      <div class="titols2">
+          <h2>Edició i iluminació</h2></div>
+     <div class="demoreel">
+    <div class="container-display" width="75%">
+        <img class="mySlides" src="imatges/3llums.jpg" style="width:100%">
+        <img class="mySlides" src="imatges/calidifred.JPG" style="width:100%">
+        <img class="mySlides" src="imatges/logo6.jpg" style="width:100%">
+        <img class="mySlides" src="imatges/terrabasket.jpg" style="width:100%">
+
+        <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+         </div></div>
+    <!--Script JS-->
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+    </script>
+        
          </div>
+        <div class="titols2">
+         <h2>Animacions 3D</h2>
+              <div class="demoreel">
+             <video class="mida" width="75%" controls>
+             <source src="demoreel/Jump34.mp4" type="video/mp4">
+             <source src="Jump34.ogg" type="video/ogg">
+                </video></div>
+             </div>
          <div class="titols2">
          <h2>Contacte</h2>
              <div id="icones">
