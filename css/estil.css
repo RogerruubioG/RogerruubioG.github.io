@@ -1,5 +1,5 @@
 body {
-    background-color: burlywood;
+    background-color: firebrick;
     margin: 20px;
     padding: 20px;
     font-family: 'Varela Round', sans-serif;
@@ -25,20 +25,20 @@ p {font-family: 'Varela Round', sans-serif;}
     background-color: azure;
     padding: 12px;
     border-radius: 20px;
-    box-shadow: 7px 4px;
+    box-shadow: 7px 4px 2px 2px;
+    
 }
 
 .demoreel{
     display: flex;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .flex-2{
     flex: 1;
     flex-basis: 200px;
-    border: 1px solid grey;
-    border-radius: 12px;
     margin: 6px;
     
 }
@@ -71,7 +71,6 @@ p {font-family: 'Varela Round', sans-serif;}
 .container-flex{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid grey;
     margin-top: 12px;
 }
 
